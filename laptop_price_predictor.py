@@ -34,7 +34,7 @@ type_list = sorted(data['TypeName'].unique())
 typename = col1.selectbox('TypeName', type_list,index=4)
 
 ram_list = sorted(data['Ram'].unique())
-ram = col2.selectbox('Ram ( in GB )', ram_list,index=3)
+ram = col2.selectbox('RAM ( in GB )', ram_list,index=3)
 
 weight = col2.number_input("Enter Weight of the laptop ( Between 0.69 and 4.69 ) ", min_value=0.69, max_value=4.69,
                          step=0.1,value=2.5)
